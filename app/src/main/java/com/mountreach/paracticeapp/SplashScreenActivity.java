@@ -25,8 +25,9 @@ public class SplashScreenActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_splash_screen);
-
-        tvsplash = findViewById(R.id.tvsplash);
+        lottieView = findViewById(R.id.lottieView);
+        lottieView.setAnimation(R.raw.chatting_animation);
+        lottieView.playAnimation();
 
      Handler handler = new Handler();
        handler.postDelayed(new Runnable() {
