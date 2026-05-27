@@ -11,13 +11,17 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.airbnb.lottie.LottieAnimationView;
+
 public class SplashScreenActivity extends AppCompatActivity {
 
-    TextView tvsplash;
+
+    LottieAnimationView lottieView;
 
     String appName = "DocLink";
     int index = 0;
     long dealy = 200;
+    TextView tvsplash;
 
 
     @Override
